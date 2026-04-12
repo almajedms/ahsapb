@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
@@ -14,6 +14,12 @@ const notoKufi = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "700", "900"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "بينتبول الأحساء | Ahsa Paintball",
