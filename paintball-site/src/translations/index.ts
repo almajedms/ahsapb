@@ -1,0 +1,527 @@
+export type Locale = "ar" | "en";
+export type Translations = typeof translations[Locale];
+
+export const translations = {
+  ar: {
+    // Navbar
+    nav: {
+      home: "الرئيسية",
+      packages: "الباقات",
+      gallery: "المعرض",
+      about: "عنا",
+      contact: "تواصل",
+      bookNow: "احجز الآن",
+    },
+
+    // Hero
+    hero: {
+      badge: "أفضل ملعب بينتبول في الأحساء والمنطقة الشرقية",
+      line1: "استعد.",
+      line2: "تسلح.",
+      line3: "تفوق.",
+      subtitle:
+        "استعد لخوض أعنف معارك البينتبول. اختر باقتك، وحدد موعدك، وأحضر فريقك — بينتبول الأحساء يوصل إلى أقصى درجات الأدرينالين.",
+      ctaPrimary: "احجز معركتك",
+      ctaSecondary: "استعرض الباقات",
+      stat1Value: "+5000",
+      stat1Label: "لاعب خدمناه",
+      stat2Value: "100%",
+      stat2Label: "سجل سلامة",
+      stat3Value: "+50",
+      stat3Label: "فريق شهرياً",
+    },
+
+    // Features
+    features: {
+      sectionTag: "لماذا بينتبول الأحساء",
+      title: "صُنع من أجل",
+      titleHighlight: "المحاربين",
+      subtitle:
+        "كل تفصيلة صُممت لرفع الأدرينالين لديك. نحن لسنا مجرد ملعب — نحن تجربة ميدان قتال حقيقية.",
+      items: [
+        {
+          title: "حماية عسكرية المستوى",
+          desc: "معدات وقاية كاملة مشمولة — أقنعة، وقاية صدر، وقفازات. جميع المعدات تُصان باحترافية.",
+        },
+        {
+          title: "مسدسات احترافية",
+          desc: "بنادق بينتبول متطورة مُعايَرة للدقة. اشعر بالفرق مع كل طلقة.",
+        },
+        {
+          title: "ساحات متعددة",
+          desc: "8 مناطق قتال فريدة من حرب المدن إلى كمين الغابات. كل زيارة مهمة جديدة.",
+        },
+        {
+          title: "دوريات تنافسية",
+          desc: "انضم لدورياتنا الأسبوعية والبطولات الشهرية. تسلق الترتيب وانتزع المجد.",
+        },
+        {
+          title: "دعم على مدار الساعة",
+          desc: "فريقنا دائماً في الخدمة. أسئلة قبل الحجز؟ نحن هنا لك.",
+        },
+        {
+          title: "جدولة مرنة",
+          desc: "مواعيد متاحة من الصباح حتى منتصف الليل. احجز في اللحظة الأخيرة أو خطط مسبقاً.",
+        },
+      ],
+    },
+
+    // Packages
+    packages: {
+      sectionTag: "اختر معركتك",
+      title: "باقات المهمات",
+      subtitle: "من المبتدئين حتى اللاعبين المخضرمين — اختر الباقة التي تناسب حجم فريقك وميزانيتك.",
+      perGroup: "ريال / للمجموعة",
+      duration: "المدة",
+      group: "المجموعة",
+      bullets: "رصاصة",
+      players: "لاعبين",
+      bookPackage: "احجز هذه الباقة ←",
+      customNote: "تحتاج خطة مخصصة للفعاليات الشركاتية أو البطولات؟",
+      customLink: "تواصل معنا للحصول على عرض سعر مخصص ←",
+      popular: "الأكثر طلباً",
+      bestValue: "أفضل قيمة",
+      moreInclusions: "إضافات أخرى",
+      packages: [
+        {
+          name: "معركة المبتدئين",
+          description: "مثالي للمبتدئين ومجموعات الأصدقاء الصغيرة.",
+          features: ["100 رصاصة/لاعب", "معدات أساسية", "ساحة واحدة", "حكم"],
+        },
+        {
+          name: "هجوم الفريق",
+          description: "الخيار الأكثر شعبية — المزيد من الساحات، المزيد من الفوضى.",
+          features: [
+            "250 رصاصة/لاعب",
+            "معدات متميزة",
+            "3 ساحات",
+            "مشرف اللعبة",
+            "لوحة النتائج",
+            "صور تذكارية",
+          ],
+        },
+        {
+          name: "الحرب الشرسة",
+          description: "هيمنة كاملة. للفرق الجادة فقط.",
+          features: [
+            "500 رصاصة/لاعب",
+            "معدات عسكرية",
+            "جميع الساحات الـ8",
+            "فريق مشرفين كامل",
+            "تعليق مباشر",
+            "مقاطع فيديو",
+            "غداء مقدم",
+            "قمصان مخصصة",
+            "حفل توزيع الكؤوس",
+          ],
+        },
+      ],
+    },
+
+    // Gallery
+    gallery: {
+      sectionTag: "ساحة المعركة",
+      title: "معرض مناطق الحرب",
+      subtitle: "8 ساحات فريدة. استراتيجيات لا حصر لها. انقر لاستكشاف كل منطقة عن قرب.",
+      arenaLabel: "ساحة بينتبول الأحساء",
+      zones: [
+        "منطقة الحرب الحضرية",
+        "معركة الليل",
+        "إحاطة الفريق",
+        "كمين الغابة",
+        "وضعية النصر",
+        "نهائيات البطولة",
+      ],
+    },
+
+    // Testimonials
+    testimonials: {
+      sectionTag: "تقارير المعارك",
+      title: "يتحدث المحاربون",
+      items: [
+        {
+          name: "خالد الرشيدي",
+          role: "قائد الفريق، النسور الصحراوية",
+          text: "جنون مطلق — بأفضل معنى ممكن. ساحات بينتبول الأحساء في مستوى آخر. جئنا لفعالية شركة وغادرنا كفريق حرب متماسك. حجزنا رحلة العودة بالفعل.",
+        },
+        {
+          name: "سارة المطيري",
+          role: "مضيفة حفلة عيد ميلاد",
+          text: "نظّمت عيد ميلاد زوجي الثلاثين هنا. 24 ضيفاً، كلهم بالغون يتصرفون كأطفال — أفضل يوم على الإطلاق. الفريق سهّل كل شيء والصور جاءت رائعة.",
+        },
+        {
+          name: "محمد الزهراني",
+          role: "لاعب متكرر",
+          text: "لعبت في ملاعب عبر الخليج. بينتبول الأحساء في مستوى مختلف — المعدات ممتازة، والساحات فريدة، والمشرفون يبقون الإثارة دائماً. يستحق كل ريال.",
+        },
+        {
+          name: "فاطمة الدوسري",
+          role: "مدير موارد بشرية",
+          text: "نظّمت فعالية لبناء فريق من 40 موظفاً. بينتبول الأحساء تولى كل شيء باحترافية. باقة الحرب الشرسة كانت مثالية. فريقي لا يزال يتحدث عنها بعد ثلاثة أشهر.",
+        },
+      ],
+    },
+
+    // CTA
+    cta: {
+      title: "فريقك",
+      titleHighlight: "ينتظر.",
+      subtitle:
+        "توقف عن التخطيط. ابدأ اللعب. احجز مهمتك في أقل من دقيقتين — المواعيد تمتلئ بسرعة في عطلات نهاية الأسبوع.",
+      bookNow: "احجز الآن",
+      callUs: "اتصل بنا",
+      badge1: "إلغاء مجاني قبل 24 ساعة",
+      badge2: "تأكيد حجز فوري",
+      badge3: "جميع المعدات مشمولة",
+      badge4: "لا رسوم خفية",
+    },
+
+    // Contact
+    contact: {
+      sectionTag: "تواصل معنا",
+      title: "مستعد للانطلاق؟",
+      subtitle: "أسئلة؟ تحتاج عرض سعر مخصص؟ نرد في غضون ساعتين خلال أوقات العمل.",
+      locationLabel: "الموقع",
+      locationValue: "المنطقة الصناعية، مخرج 7، الرياض",
+      phoneLabel: "الهاتف",
+      emailLabel: "البريد الإلكتروني",
+      hoursLabel: "أوقات العمل",
+      hoursValue: "يومياً: 10 صباحاً – 12 منتصف الليل",
+      formName: "الاسم الكامل",
+      formNamePlaceholder: "اسمك",
+      formPhone: "رقم الهاتف",
+      formEmail: "البريد الإلكتروني",
+      formSubject: "الموضوع",
+      formSubjectDefault: "اختر موضوعاً",
+      formSubjectOptions: ["استفسار حجز", "فعالية شركة", "حفلة عيد ميلاد", "بطولة", "أخرى"],
+      formMessage: "الرسالة",
+      formMessagePlaceholder: "أخبرنا عن مجموعتك، المواعيد المفضلة، أو أي استفسارات...",
+      formSubmit: "إرسال الرسالة",
+      successTitle: "تم استلام رسالتك!",
+      successMsg: "سيتواصل فريقنا معك خلال ساعتين. استعد للتسليح.",
+      mapLabel: "مقر بينتبول الأحساء",
+    },
+
+    // Booking
+    booking: {
+      badge: "حجز آمن عبر الإنترنت",
+      title: "احجز",
+      titleHighlight: "معركتك",
+      subtitle: "4 خطوات سريعة لتأكيد مهمتك. لا بطاقة ائتمان مطلوبة — الدفع عند الحضور.",
+      steps: ["الباقة", "التاريخ والوقت", "بياناتك", "التأكيد"],
+      step1Title: "اختر مهمتك",
+      step1Subtitle: "اختر الباقة التي تناسب حجم فريقك وميزانيتك.",
+      step2Title: "اختر التاريخ والوقت",
+      step2Subtitle: "اختر موعد انطلاق فريقك. المواعيد الرمادية محجوزة.",
+      step2DateLabel: "اختر التاريخ",
+      step2TimeLabel: "اختر الوقت",
+      step2Taken: "محجوز",
+      step2GroupLabel: "حجم المجموعة",
+      step2EstLabel: "التكلفة التقديرية",
+      step2FlatNote: "سعر ثابت بغض النظر عن حجم المجموعة ضمن الحدود",
+      step3Title: "بياناتك",
+      step3Subtitle: "سنرسل تأكيد الحجز إلى بريدك الإلكتروني.",
+      step3Name: "الاسم الكامل *",
+      step3NamePlaceholder: "اسمك",
+      step3Phone: "الهاتف *",
+      step3Email: "البريد الإلكتروني *",
+      step3Notes: "طلبات خاصة",
+      step3NotesPlaceholder: "احتفال عيد ميلاد؟ احتياجات غذائية؟ أخبرنا...",
+      step4Title: "مراجعة وتأكيد",
+      step4Subtitle: "تحقق من كل شيء قبل تأكيد مهمتك.",
+      step4Package: "الباقة",
+      step4Date: "التاريخ",
+      step4Time: "الوقت",
+      step4Group: "حجم المجموعة",
+      step4Name: "الاسم",
+      step4Phone: "الهاتف",
+      step4Email: "البريد",
+      step4Total: "المجموع",
+      step4Players: "لاعبين",
+      step4CancelNote: "إلغاء مجاني حتى 24 ساعة قبل موعدك. لا دفع الآن — التسوية عند الوصول.",
+      btnContinue: "متابعة",
+      btnBack: "رجوع",
+      btnConfirm: "تأكيد الحجز",
+      errPackage: "يرجى اختيار باقة.",
+      errDateTime: "يرجى اختيار تاريخ ووقت.",
+      errInfo: "يرجى ملء جميع الحقول المطلوبة.",
+      successTitle: "تم تأكيد المهمة!",
+      successMsg: "حجزك مؤكد وجاهز. سنراك في ساحة المعركة.",
+      successEmailNote: "سيُرسل التأكيد إلى بريدك الإلكتروني. تحقق من صندوق الوارد (والبريد المزعج).",
+      successBack: "العودة للرئيسية",
+      perGroup: "ريال / للمجموعة",
+      bullets: "رصاصة",
+      gearIncl: "معدات مشمولة",
+      popularBadge: "الأكثر طلباً",
+      moreInclusions: "إضافات أخرى",
+      players: "لاعبين",
+    },
+
+    // Footer
+    footer: {
+      tagline: "أكثر تجارب البينتبول إثارة في المملكة العربية السعودية. استعد وأطلق النار — مغامرتك القادمة تنتظر.",
+      quickLinks: "روابط سريعة",
+      quickItems: ["الرئيسية", "الباقات", "المعرض", "من نحن", "تواصل"],
+      packagesTitle: "الباقات",
+      packageItems: ["معركة المبتدئين", "هجوم الفريق", "الحرب الشرسة", "معركة الشركات", "انفجار عيد الميلاد", "البطولة"],
+      findUs: "جدنا",
+      address: "المنطقة الصناعية، مخرج 7\nالرياض، المملكة العربية السعودية",
+      rights: "جميع الحقوق محفوظة.",
+      privacy: "سياسة الخصوصية",
+      terms: "شروط الخدمة",
+      safety: "قواعد السلامة",
+    },
+
+    // 404
+    notFound: {
+      title: "طلقة خاطئة.",
+      subtitle: "هذه الصفحة غير موجودة — حتى أمهر رماتنا لا يستطيعون إصابة هدف غير موجود.",
+      back: "العودة للقاعدة",
+    },
+  },
+
+  en: {
+    nav: {
+      home: "Home",
+      packages: "Packages",
+      gallery: "Gallery",
+      about: "About",
+      contact: "Contact",
+      bookNow: "Book Now",
+    },
+
+    hero: {
+      badge: "Al-Ahsa's #1 Paintball Arena",
+      line1: "LOCK.",
+      line2: "LOAD.",
+      line3: "DOMINATE.",
+      subtitle:
+        "Gear up for the ultimate paintball battle. Choose your package, pick your date, and bring the squad — Ahsa Paintball delivers pure adrenaline.",
+      ctaPrimary: "Book Your Battle",
+      ctaSecondary: "View Packages",
+      stat1Value: "5000+",
+      stat1Label: "Players Served",
+      stat2Value: "100%",
+      stat2Label: "Safety Record",
+      stat3Value: "50+",
+      stat3Label: "Teams Monthly",
+    },
+
+    features: {
+      sectionTag: "Why Ahsa Paintball",
+      title: "Built for",
+      titleHighlight: "Warriors",
+      subtitle:
+        "Every detail crafted to maximize your adrenaline. We're not just a paintball field — we're a battlefield experience.",
+      items: [
+        {
+          title: "Military-Grade Safety",
+          desc: "Full protective gear included — masks, chest pads, gloves. All equipment professionally maintained.",
+        },
+        {
+          title: "Pro-Grade Markers",
+          desc: "State-of-the-art paintball guns calibrated for precision. Feel the difference with every shot.",
+        },
+        {
+          title: "Multiple Arenas",
+          desc: "8 unique battle zones from urban warfare to woodland ambush. Every visit is a new mission.",
+        },
+        {
+          title: "Competitive Leagues",
+          desc: "Join our weekly leagues and monthly tournaments. Climb the leaderboard and claim glory.",
+        },
+        {
+          title: "24/7 Support",
+          desc: "Our team is always on standby. Questions before your booking? We've got you covered.",
+        },
+        {
+          title: "Flexible Scheduling",
+          desc: "Morning to midnight slots available. Book last-minute or plan weeks ahead — we adapt to you.",
+        },
+      ],
+    },
+
+    packages: {
+      sectionTag: "Choose Your Battle",
+      title: "Mission Packages",
+      subtitle:
+        "From first-timers to veteran players — pick the package that matches your firepower.",
+      perGroup: "SAR / group",
+      duration: "Duration",
+      group: "Group",
+      bullets: "bullets",
+      players: "players",
+      bookPackage: "Book This Package →",
+      customNote: "Need a custom plan for corporate events or tournaments?",
+      customLink: "Contact us for a tailored quote →",
+      popular: "Most Popular",
+      bestValue: "Best Value",
+      moreInclusions: "more inclusions",
+      packages: [
+        {
+          name: "Rookie Rumble",
+          description: "Perfect for beginners and small friend groups.",
+          features: ["100 balls/player", "Basic gear", "1 arena zone", "Referee"],
+        },
+        {
+          name: "Squad Assault",
+          description: "The crowd favourite — more zones, more chaos.",
+          features: ["250 balls/player", "Premium gear", "3 zones", "Game master", "Scoreboard", "Photos"],
+        },
+        {
+          name: "Elite Warfare",
+          description: "Total domination. For serious squads only.",
+          features: ["500 balls/player", "Military gear", "All 8 zones", "Full team", "Video reel", "Catered lunch", "Jerseys", "Trophy"],
+        },
+      ],
+    },
+
+    gallery: {
+      sectionTag: "The Battlefield",
+      title: "War Zones Gallery",
+      subtitle: "8 unique arenas. Endless strategies. Click to explore each zone up close.",
+      arenaLabel: "Ahsa Paintball Arena",
+      zones: ["Urban Warfare Zone", "Night Battle", "Team Briefing", "Forest Ambush", "Victory Pose", "Championship Finals"],
+    },
+
+    testimonials: {
+      sectionTag: "Battle Reports",
+      title: "Warriors Speak",
+      items: [
+        {
+          name: "Khalid Al-Rashidi",
+          role: "Team Captain, Desert Eagles",
+          text: "Absolute madness — in the best way possible. Ahsa Paintball's arenas are next-level. We came for a corporate event and left as a bonded war squad. Already booked our return trip.",
+        },
+        {
+          name: "Sara Al-Mutairi",
+          role: "Birthday Party Host",
+          text: "Threw my husband's 30th birthday here. 24 guests, all adults acting like kids — best day ever. The staff made everything so smooth and the photos came out incredible.",
+        },
+        {
+          name: "Mohammed Al-Zahrani",
+          role: "Regular Player",
+          text: "I've played at fields across the Gulf. Ahsa Paintball is on another level — the equipment is top notch, arenas are unique, and the game masters keep it exciting. Worth every riyal.",
+        },
+        {
+          name: "Fatima Al-Dosari",
+          role: "Corporate HR Manager",
+          text: "Organized a team-building event for 40 employees. Ahsa Paintball handled everything professionally. The Elite Warfare package was perfect. Our team still talks about it three months later.",
+        },
+      ],
+    },
+
+    cta: {
+      title: "Your Squad is",
+      titleHighlight: "Waiting.",
+      subtitle:
+        "Stop planning. Start playing. Book your mission in under 2 minutes — slots fill fast on weekends.",
+      bookNow: "Book Now",
+      callUs: "Call Us",
+      badge1: "Free cancellation 24h before",
+      badge2: "Instant booking confirmation",
+      badge3: "All gear included",
+      badge4: "No hidden fees",
+    },
+
+    contact: {
+      sectionTag: "Get In Touch",
+      title: "Ready to Deploy?",
+      subtitle: "Got questions? Need a custom quote? We respond within 2 hours during operating hours.",
+      locationLabel: "Location",
+      locationValue: "Industrial Zone, Exit 7, Riyadh",
+      phoneLabel: "Phone",
+      emailLabel: "Email",
+      hoursLabel: "Hours",
+      hoursValue: "Daily: 10:00 AM – 12:00 AM",
+      formName: "Full Name",
+      formNamePlaceholder: "Your name",
+      formPhone: "Phone Number",
+      formEmail: "Email Address",
+      formSubject: "Subject",
+      formSubjectDefault: "Select a topic",
+      formSubjectOptions: ["Booking Inquiry", "Corporate Event", "Birthday Party", "Tournament", "Other"],
+      formMessage: "Message",
+      formMessagePlaceholder: "Tell us about your group, preferred dates, or any questions...",
+      formSubmit: "Send Message",
+      successTitle: "Message Received!",
+      successMsg: "Our team will contact you within 2 hours. Get ready to lock and load.",
+      mapLabel: "Ahsa Paintball HQ",
+    },
+
+    booking: {
+      badge: "Secure Online Booking",
+      title: "Book Your",
+      titleHighlight: "Battle",
+      subtitle: "4 quick steps to lock in your mission. No credit card required — pay on arrival.",
+      steps: ["Package", "Date & Time", "Your Info", "Confirm"],
+      step1Title: "Choose Your Mission",
+      step1Subtitle: "Select the package that fits your squad size and budget.",
+      step2Title: "Pick Your Date & Time",
+      step2Subtitle: "Choose when your squad deploys. Grey slots are already taken.",
+      step2DateLabel: "Select Date",
+      step2TimeLabel: "Select Time",
+      step2Taken: "Taken",
+      step2GroupLabel: "Group Size",
+      step2EstLabel: "Estimated total",
+      step2FlatNote: "Flat rate regardless of group size within limits",
+      step3Title: "Your Details",
+      step3Subtitle: "We'll send your booking confirmation here.",
+      step3Name: "Full Name *",
+      step3NamePlaceholder: "Your name",
+      step3Phone: "Phone *",
+      step3Email: "Email *",
+      step3Notes: "Special Requests",
+      step3NotesPlaceholder: "Birthday celebration? Dietary needs? Let us know...",
+      step4Title: "Review & Confirm",
+      step4Subtitle: "Double-check everything before locking in your mission.",
+      step4Package: "Package",
+      step4Date: "Date",
+      step4Time: "Time",
+      step4Group: "Group Size",
+      step4Name: "Name",
+      step4Phone: "Phone",
+      step4Email: "Email",
+      step4Total: "Total",
+      step4Players: "players",
+      step4CancelNote: "Free cancellation up to 24 hours before your slot. No payment needed now — you'll settle on the day.",
+      btnContinue: "Continue",
+      btnBack: "Back",
+      btnConfirm: "Confirm Booking",
+      errPackage: "Please select a package.",
+      errDateTime: "Please select a date and time.",
+      errInfo: "Please fill in all required fields.",
+      successTitle: "Mission Confirmed!",
+      successMsg: "Your booking is locked and loaded. We'll see you on the battlefield.",
+      successEmailNote: "A confirmation will be sent to your email. Check your inbox (and spam folder).",
+      successBack: "Back to Home",
+      perGroup: "SAR / group",
+      bullets: "bullets",
+      gearIncl: "Gear incl.",
+      popularBadge: "Popular",
+      moreInclusions: "more inclusions",
+      players: "players",
+    },
+
+    footer: {
+      tagline: "Al-Ahsa's most thrilling paintball experience. Lock and load — your next adventure awaits.",
+      quickLinks: "Quick Links",
+      quickItems: ["Home", "Packages", "Gallery", "About Us", "Contact"],
+      packagesTitle: "Packages",
+      packageItems: ["Rookie Rumble", "Squad Assault", "Elite Warfare", "Corporate Battle", "Birthday Blitz", "Tournament"],
+      findUs: "Find Us",
+      address: "Industrial Zone, Exit 7\nRiyadh, Saudi Arabia",
+      rights: "All rights reserved.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      safety: "Safety Rules",
+    },
+
+    notFound: {
+      title: "Missed shot.",
+      subtitle: "This page doesn't exist — even our best marksmen can't hit a target that isn't there.",
+      back: "Return to Base",
+    },
+  },
+} as const;
+

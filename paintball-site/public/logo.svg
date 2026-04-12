@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="200" height="200" rx="40" fill="#080808"/>
+
+  <!-- Glow -->
+  <circle cx="92" cy="108" r="66" fill="#a3e635" opacity="0.06"/>
+
+  <!-- Outer target ring -->
+  <circle cx="92" cy="108" r="60" stroke="#a3e635" strokeWidth="4" opacity="0.4"/>
+  <!-- Mid ring -->
+  <circle cx="92" cy="108" r="38" stroke="#a3e635" strokeWidth="3.5" opacity="0.7"/>
+  <!-- Center ball -->
+  <circle cx="92" cy="108" r="18" fill="#a3e635"/>
+
+  <!-- Crosshair -->
+  <line x1="92" y1="30" x2="92" y2="63"  stroke="#a3e635" strokeWidth="5" strokeLinecap="round"/>
+  <line x1="92" y1="153" x2="92" y2="186" stroke="#a3e635" strokeWidth="5" strokeLinecap="round"/>
+  <line x1="14" y1="108" x2="47" y2="108" stroke="#a3e635" strokeWidth="5" strokeLinecap="round"/>
+  <line x1="137" y1="108" x2="170" y2="108" stroke="#a3e635" strokeWidth="5" strokeLinecap="round"/>
+
+  <!-- Paint splatter cluster — top right -->
+  <circle cx="158" cy="42" r="22" fill="#a3e635"/>
+  <circle cx="180" cy="30" r="11" fill="#a3e635" opacity="0.85"/>
+  <circle cx="178" cy="62" r="8"  fill="#a3e635" opacity="0.7"/>
+  <circle cx="148" cy="20" r="7"  fill="#a3e635" opacity="0.6"/>
+  <circle cx="170" cy="72" r="5"  fill="#a3e635" opacity="0.5"/>
+  <circle cx="140" cy="10" r="4"  fill="#a3e635" opacity="0.4"/>
+
+  <!-- Accent splat — bottom left (orange) -->
+  <circle cx="26"  cy="168" r="13" fill="#f97316" opacity="0.85"/>
+  <circle cx="10"  cy="155" r="7"  fill="#f97316" opacity="0.65"/>
+  <circle cx="38"  cy="182" r="5"  fill="#f97316" opacity="0.55"/>
+</svg>
