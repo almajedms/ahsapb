@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/almajedms/Library/**)",
+      "Bash(npx tsc:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(dig ahsapb.com A +short)",
+      "Bash(dig www.ahsapb.com CNAME +short)",
+      "Bash(git commit:*)",
+      "WebSearch",
+      "WebFetch(domain:www.callmebot.com)"
+    ]
+  }
+}
