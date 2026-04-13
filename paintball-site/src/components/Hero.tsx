@@ -85,9 +85,9 @@ export default function Hero() {
           src="/hero-bg.jpg"
           alt=""
           className="w-full h-full object-cover object-top"
-          style={{ filter: "brightness(0.2) saturate(0.3) contrast(1.1)" }}
+          style={{ filter: "brightness(0.55) saturate(0.6) contrast(1.1)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080808]/70 via-[#080808]/50 to-[#080808]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080808]/50 via-[#080808]/30 to-[#080808]/80" />
       </div>
 
       {/* ── Ambient glow — left (text) side ── */}
