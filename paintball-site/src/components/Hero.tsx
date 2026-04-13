@@ -84,8 +84,8 @@ export default function Hero() {
         <img
           src="/hero-bg.jpg"
           alt=""
-          className="w-full h-full object-cover object-top"
-          style={{ filter: "brightness(0.55) saturate(0.6) contrast(1.1)" }}
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.55) saturate(0.6) contrast(1.1)", objectPosition: "30% top" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#080808]/50 via-[#080808]/30 to-[#080808]/80" />
       </div>
@@ -102,8 +102,8 @@ export default function Hero() {
           <img
             src="/hero-bg.jpg"
             alt="Paintball player at Ahsa Paintball arena"
-            className="w-full h-full object-cover object-center"
-            style={{ filter: "brightness(0.52) contrast(1.1) saturate(0.55)" }}
+            className="w-full h-full object-cover"
+            style={{ filter: "brightness(0.52) contrast(1.1) saturate(0.55)", objectPosition: "30% center" }}
           />
 
           {/* Green atmosphere overlay */}
