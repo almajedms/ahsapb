@@ -14,38 +14,44 @@ export function LogoMark({ size = 36 }: { size?: number }) {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      {/* Glow circle bg */}
-      <circle cx="22" cy="26" r="16" fill="#a3e635" opacity="0.12" />
+      {/* Glow bg */}
+      <circle cx="24" cy="24" r="22" fill="#a3e635" opacity="0.08" />
 
-      {/* Outer target ring */}
-      <circle cx="22" cy="26" r="14.5" stroke="#a3e635" strokeWidth="2" opacity="0.5" />
+      {/* Outer ring */}
+      <circle cx="24" cy="24" r="20" stroke="#a3e635" strokeWidth="1.5" opacity="0.5" />
 
-      {/* Mid target ring */}
-      <circle cx="22" cy="26" r="9" stroke="#a3e635" strokeWidth="2" opacity="0.75" />
+      {/* Middle ring */}
+      <circle cx="24" cy="24" r="13" stroke="#a3e635" strokeWidth="1.5" opacity="0.75" />
 
-      {/* Center filled circle (paintball core) */}
-      <circle cx="22" cy="26" r="4.5" fill="#a3e635" />
+      {/* Inner aim ring */}
+      <circle cx="24" cy="24" r="5" stroke="#a3e635" strokeWidth="1.5" />
 
-      {/* Crosshair lines — top */}
-      <line x1="22" y1="8" x2="22" y2="15" stroke="#a3e635" strokeWidth="2" strokeLinecap="round" />
+      {/* Center dot */}
+      <circle cx="24" cy="24" r="2" fill="#a3e635" />
+
+      {/* Crosshair — top */}
+      <line x1="24" y1="4"  x2="24" y2="19" stroke="#a3e635" strokeWidth="1.5" strokeLinecap="round" />
       {/* bottom */}
-      <line x1="22" y1="37" x2="22" y2="44" stroke="#a3e635" strokeWidth="2" strokeLinecap="round" />
+      <line x1="24" y1="29" x2="24" y2="44" stroke="#a3e635" strokeWidth="1.5" strokeLinecap="round" />
       {/* left */}
-      <line x1="5" y1="26" x2="11" y2="26" stroke="#a3e635" strokeWidth="2" strokeLinecap="round" />
+      <line x1="4"  y1="24" x2="19" y2="24" stroke="#a3e635" strokeWidth="1.5" strokeLinecap="round" />
       {/* right */}
-      <line x1="33" y1="26" x2="39" y2="26" stroke="#a3e635" strokeWidth="2" strokeLinecap="round" />
+      <line x1="29" y1="24" x2="44" y2="24" stroke="#a3e635" strokeWidth="1.5" strokeLinecap="round" />
 
-      {/* Paint splatter blobs — top-right cluster */}
-      <circle cx="38" cy="10" r="5.5" fill="#a3e635" />
-      <circle cx="44" cy="7"  r="2.8" fill="#a3e635" opacity="0.85" />
-      <circle cx="43" cy="15" r="2"   fill="#a3e635" opacity="0.7" />
-      <circle cx="35" cy="5"  r="1.8" fill="#a3e635" opacity="0.6" />
-      <circle cx="40" cy="18" r="1.2" fill="#a3e635" opacity="0.5" />
+      {/* Mil-dot ticks between outer and middle ring */}
+      <circle cx="24" cy="8"  r="1.2" fill="#a3e635" opacity="0.6" />
+      <circle cx="24" cy="40" r="1.2" fill="#a3e635" opacity="0.6" />
+      <circle cx="8"  cy="24" r="1.2" fill="#a3e635" opacity="0.6" />
+      <circle cx="40" cy="24" r="1.2" fill="#a3e635" opacity="0.6" />
 
-      {/* Small accent splat — bottom-left */}
-      <circle cx="6"  cy="42" r="3"   fill="#f97316" opacity="0.8" />
-      <circle cx="2"  cy="38" r="1.8" fill="#f97316" opacity="0.6" />
-      <circle cx="10" cy="45" r="1.2" fill="#f97316" opacity="0.5" />
+      {/* Paint splat accent — top right */}
+      <circle cx="39" cy="9"  r="3"   fill="#a3e635" opacity="0.9" />
+      <circle cx="44" cy="7"  r="1.8" fill="#a3e635" opacity="0.7" />
+      <circle cx="43" cy="14" r="1.2" fill="#a3e635" opacity="0.5" />
+
+      {/* Orange accent splat — bottom left */}
+      <circle cx="8"  cy="40" r="2"   fill="#f97316" opacity="0.8" />
+      <circle cx="4"  cy="43" r="1.2" fill="#f97316" opacity="0.6" />
     </svg>
   );
 }
