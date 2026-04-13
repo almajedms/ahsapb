@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://ahsapb.com/opengraph-image",
+        url: "https://www.ahsapb.com/opengraph-image",
         width: 1200,
         height: 630,
         alt: "بينتبول الأحساء | Ahsa Paintball",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "بينتبول الأحساء | Ahsa Paintball",
     description: "أفضل تجربة بينتبول في الأحساء والمنطقة الشرقية. احجز الآن!",
-    images: ["https://ahsapb.com/opengraph-image"],
+    images: ["https://www.ahsapb.com/opengraph-image"],
   },
 };
 
