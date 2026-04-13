@@ -26,6 +26,19 @@ export const metadata: Metadata = {
   description:
     "أفضل تجربة بينتبول في الأحساء والمنطقة الشرقية. احجز ملعبك عبر الإنترنت، اختر باقتك، وأطلق العنان للمتعة مع فريقك.",
   keywords: "paintball, بينتبول, الأحساء, Ahsa, booking, حجز, arena, ملعب, Saudi Arabia, المملكة العربية السعودية",
+  openGraph: {
+    title: "بينتبول الأحساء | Ahsa Paintball",
+    description: "أفضل تجربة بينتبول في الأحساء والمنطقة الشرقية. احجز الآن!",
+    url: "https://ahsapb.com",
+    siteName: "بينتبول الأحساء",
+    locale: "ar_SA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "بينتبول الأحساء | Ahsa Paintball",
+    description: "أفضل تجربة بينتبول في الأحساء والمنطقة الشرقية. احجز الآن!",
+  },
 };
 
 export default function RootLayout({
