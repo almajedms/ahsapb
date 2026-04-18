@@ -19,9 +19,9 @@ import { useLanguage } from "@/context/LanguageContext";
 
 // ─── Static data (prices, group sizes, etc.) ─────────────────────────────────
 const packagesMeta = [
-  { id: "rookie", price: 149, duration: "2 hrs", minGroup: 4, maxGroup: 8, bullets: 100, accentColor: "#94a3b8", popular: false, tag: null },
-  { id: "squad",  price: 279, duration: "4 hrs", minGroup: 8, maxGroup: 16, bullets: 250, accentColor: "#a3e635", popular: true,  tag: "popular" },
-  { id: "elite",  price: 499, duration: "full",  minGroup: 16, maxGroup: 32, bullets: 500, accentColor: "#f97316", popular: false, tag: "value" },
+  { id: "rookie", price: 75,  duration: "2 hrs", minGroup: 4,  maxGroup: 8,  bullets: 50,  accentColor: "#94a3b8", popular: false, tag: null },
+  { id: "squad",  price: 100, duration: "4 hrs", minGroup: 8,  maxGroup: 16, bullets: 100, accentColor: "#a3e635", popular: true,  tag: "popular" },
+  { id: "elite",  price: 150, duration: "full",  minGroup: 16, maxGroup: 32, bullets: 200, accentColor: "#f97316", popular: false, tag: "value" },
 ];
 
 const TIME_SLOTS = [
