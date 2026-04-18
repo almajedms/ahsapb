@@ -7,9 +7,9 @@ import { Check, Star, Zap } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const packagesMeta = [
-  { price: 149, duration: "2 hrs", minGroup: 4, maxGroup: 8, bullets: 100, color: "from-neutral-800 to-neutral-900", accentColor: "text-neutral-300", borderColor: "border-white/10", tag: null, popular: false },
-  { price: 279, duration: "4 hrs", minGroup: 8, maxGroup: 16, bullets: 250, color: "from-[#1a2e05] to-[#0f1a04]", accentColor: "text-[#a3e635]", borderColor: "border-[#a3e635]/30", tag: "popular", popular: true },
-  { price: 499, duration: "full", minGroup: 16, maxGroup: 32, bullets: 500, color: "from-[#1a0a00] to-[#0f0600]", accentColor: "text-[#f97316]", borderColor: "border-[#f97316]/30", tag: "value", popular: false },
+  { price: 75,  duration: "2 hrs", minGroup: 4,  maxGroup: 8,  bullets: 50,  color: "from-neutral-800 to-neutral-900", accentColor: "text-neutral-300", borderColor: "border-white/10",     tag: null,     popular: false },
+  { price: 100, duration: "4 hrs", minGroup: 8,  maxGroup: 16, bullets: 100, color: "from-[#1a2e05] to-[#0f1a04]",   accentColor: "text-[#a3e635]",   borderColor: "border-[#a3e635]/30", tag: "popular", popular: true  },
+  { price: 150, duration: "full",  minGroup: 16, maxGroup: 32, bullets: 200, color: "from-[#1a0a00] to-[#0f0600]",   accentColor: "text-[#f97316]",   borderColor: "border-[#f97316]/30", tag: "value",   popular: false },
 ];
 
 export default function Packages() {

@@ -86,13 +86,13 @@ export const translations = {
         {
           name: "معركة المبتدئين",
           description: "مثالي للمبتدئين ومجموعات الأصدقاء الصغيرة.",
-          features: ["100 رصاصة/لاعب", "معدات أساسية", "ساحة واحدة", "حكم"],
+          features: ["50 رصاصة/لاعب", "معدات أساسية", "ساحة واحدة", "حكم"],
         },
         {
           name: "هجوم الفريق",
           description: "الخيار الأكثر شعبية — المزيد من الساحات، المزيد من الفوضى.",
           features: [
-            "250 رصاصة/لاعب",
+            "100 رصاصة/لاعب",
             "معدات متميزة",
             "3 ساحات",
             "مشرف اللعبة",
@@ -104,7 +104,7 @@ export const translations = {
           name: "الحرب الشرسة",
           description: "هيمنة كاملة. للفرق الجادة فقط.",
           features: [
-            "500 رصاصة/لاعب",
+            "200 رصاصة/لاعب",
             "معدات عسكرية",
             "جميع الساحات الـ8",
             "فريق مشرفين كامل",
@@ -361,17 +361,17 @@ export const translations = {
         {
           name: "Rookie Rumble",
           description: "Perfect for beginners and small friend groups.",
-          features: ["100 balls/player", "Basic gear", "1 arena zone", "Referee"],
+          features: ["50 balls/player", "Basic gear", "1 arena zone", "Referee"],
         },
         {
           name: "Squad Assault",
           description: "The crowd favourite — more zones, more chaos.",
-          features: ["250 balls/player", "Premium gear", "3 zones", "Game master", "Scoreboard", "Photos"],
+          features: ["100 balls/player", "Premium gear", "3 zones", "Game master", "Scoreboard", "Photos"],
         },
         {
           name: "Elite Warfare",
           description: "Total domination. For serious squads only.",
-          features: ["500 balls/player", "Military gear", "All 8 zones", "Full team", "Video reel", "Catered lunch", "Jerseys", "Trophy"],
+          features: ["200 balls/player", "Military gear", "All 8 zones", "Full team", "Video reel", "Catered lunch", "Jerseys", "Trophy"],
         },
       ],
     },
