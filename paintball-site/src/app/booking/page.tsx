@@ -19,9 +19,9 @@ import { useLanguage } from "@/context/LanguageContext";
 
 // ─── Static data (prices, group sizes, etc.) ─────────────────────────────────
 const packagesMeta = [
-  { id: "rookie", price: 75,  duration: "2 hrs", minGroup: 4,  maxGroup: 8,  bullets: 50,  accentColor: "#94a3b8", popular: false, tag: null },
-  { id: "squad",  price: 100, duration: "4 hrs", minGroup: 8,  maxGroup: 16, bullets: 100, accentColor: "#a3e635", popular: true,  tag: "popular" },
-  { id: "elite",  price: 150, duration: "full",  minGroup: 16, maxGroup: 32, bullets: 200, accentColor: "#f97316", popular: false, tag: "value" },
+  { id: "rookie", price: 75,  duration: "2 hrs", minGroup: 2, maxGroup: 8,  bullets: 50,  accentColor: "#94a3b8", popular: false, tag: null },
+  { id: "squad",  price: 100, duration: "4 hrs", minGroup: 2, maxGroup: 16, bullets: 100, accentColor: "#a3e635", popular: true,  tag: "popular" },
+  { id: "elite",  price: 150, duration: "full",  minGroup: 2, maxGroup: 32, bullets: 200, accentColor: "#f97316", popular: false, tag: "value" },
 ];
 
 const TIME_SLOTS = [
@@ -151,7 +151,7 @@ function DateTimeStep({ date, time, groupSize, selectedPkg, onDateSelect, onTime
   onDateSelect: (d: Date) => void; onTimeSelect: (t: string) => void; onGroupSizeChange: (n: number) => void;
 }) {
   const { t, isAr } = useLanguage();
-  const min = selectedPkg?.minGroup ?? 4;
+  const min = selectedPkg?.minGroup ?? 2;
   const max = selectedPkg?.maxGroup ?? 32;
   const locale = isAr ? arSA : undefined;
 
@@ -199,9 +199,9 @@ function DateTimeStep({ date, time, groupSize, selectedPkg, onDateSelect, onTime
               <div className="mt-3 glass rounded-xl p-4 border border-[#a3e635]/20">
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-neutral-400">{t.booking.step2EstLabel}</span>
-                  <span className="text-xl font-black text-[#a3e635]">{selectedPkg.price} {t.booking.perGroup.split(" ")[0]}</span>
+                  <span className="text-xl font-black text-[#a3e635]">{selectedPkg.price * groupSize} {t.booking.perGroup.split(" ")[0]}</span>
                 </div>
-                <p className="text-xs text-neutral-600 mt-1">{t.booking.step2FlatNote}</p>
+                <p className="text-xs text-neutral-600 mt-1">{groupSize} × {selectedPkg.price} {t.booking.perGroup.split(" ")[0]}</p>
               </div>
             )}
           </div>
@@ -337,7 +337,7 @@ function BookingWizard() {
   });
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
-  const [groupSize, setGroupSize] = useState(8);
+  const [groupSize, setGroupSize] = useState(2);
   const [formData, setFormData] = useState<FormData>({ name: "", email: "", phone: "", notes: "" });
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -366,7 +366,7 @@ function BookingWizard() {
   };
 
   const stepComponents = [
-    <PackageStep key="pkg" selected={selectedPkg} onSelect={(p) => { setSelectedPkg(p); setGroupSize(p.minGroup); }} />,
+    <PackageStep key="pkg" selected={selectedPkg} onSelect={(p) => { setSelectedPkg(p); setGroupSize(2); }} />,
     <DateTimeStep key="dt" date={selectedDate} time={selectedTime} groupSize={groupSize} selectedPkg={selectedPkg} onDateSelect={setSelectedDate} onTimeSelect={setSelectedTime} onGroupSizeChange={setGroupSize} />,
     <InfoStep key="info" data={formData} onChange={setFormData} />,
     <ConfirmStep key="confirm" pkg={selectedPkg} date={selectedDate} time={selectedTime} groupSize={groupSize} info={formData} />,
