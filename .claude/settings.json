@@ -10,7 +10,11 @@
       "Bash(dig www.ahsapb.com CNAME +short)",
       "Bash(git commit:*)",
       "WebSearch",
-      "WebFetch(domain:www.callmebot.com)"
+      "WebFetch(domain:www.callmebot.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ahsapb.com/opengraph-image\")",
+      "Bash(curl -sI \"https://ahsapb.com\")",
+      "Bash(curl -s \"https://ahsapb.com\")",
+      "Bash(curl -sI \"https://ahsapb.com/opengraph-image\")"
     ]
   }
 }
