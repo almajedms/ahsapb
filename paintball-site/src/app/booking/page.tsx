@@ -360,9 +360,33 @@ function BookingWizard() {
 
   const handleSubmit = async () => {
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setSubmitting(false);
-    setDone(true);
+    setError(null);
+    try {
+      const pkgIndex = packagesMeta.findIndex((m) => m.id === selectedPkg!.id);
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name:          formData.name,
+          phone:         formData.phone,
+          email:         formData.email,
+          package_id:    selectedPkg!.id,
+          package_name:  t.packages.packages[pkgIndex]?.name ?? selectedPkg!.id,
+          package_price: selectedPkg!.price,
+          date:          selectedDate!.toISOString().slice(0, 10),
+          time:          selectedTime!,
+          group_size:    groupSize,
+          total_price:   selectedPkg!.price * groupSize,
+          notes:         formData.notes,
+        }),
+      });
+      if (!res.ok) throw new Error("Booking failed");
+      setSubmitting(false);
+      setDone(true);
+    } catch {
+      setSubmitting(false);
+      setError(t.booking.errInfo);
+    }
   };
 
   const stepComponents = [
